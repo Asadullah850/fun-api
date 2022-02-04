@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="fun-with-api.js"></script>
+    <script src="https://kit.fontawesome.com/b37ebf4258.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css-fun-with-api.css">
+    <title>Fun With API</title>
+</head>
+<body>
+    <div class="container">
+        <div class="element" id="element">
+            <h1><i class="fas fa-smile-wink"></i></i></h1><hr/><br/><br/>
+            <h1>Read and enjoy <i class="fas fa-stopwatch"></i></h1><hr/><br/><br/>
+            <h3 id="activity"></h3>
+            <br/>
+        </div>
+        <div class="element2" id="element2">
+            <h1><i class="fas fa-tired">you are boring??</i></h1><hr/><br/><br/>
+            <h4>Reload and enjoy <i class="fas fa-stopwatch-20"></i></h4><hr/><br/><br/>
+            <h3 id="activity2"></h3>
+            <br/>
+            <button id="auto" type="reset">Auto display</button>
+        </div>
+        
+    </div>
+    <script>
+        const element1 = document.getElementById("element");
+        element1.style.display = "none";
+        const butt = document.getElementById('auto');
+        butt.addEventListener('click', function(){
+            element1.style.display = "block";
+            const element2 = document.getElementById("element2");
+            element2.style.display = "none";
+        })
+    </script>
+</body>
+</html>
